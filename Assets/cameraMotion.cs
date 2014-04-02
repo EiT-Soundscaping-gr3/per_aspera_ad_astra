@@ -10,9 +10,10 @@ public class cameraMotion : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		// Enable the compass.
-		Input.location.Start();
+		//Input.location.Start();
 		compass = Input.compass;
 		compass.enabled = true;
+		transform.Rotate(0,45,0);
 	}
 	
 	// Update is called once per frame
